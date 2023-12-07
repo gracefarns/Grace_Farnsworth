@@ -1,0 +1,845 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20233.23.1017.0948                               -->
+<workbook original-version='18.1' source-build='2023.3.0 (20233.23.1017.0948)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='KCLT' inline='true' name='federated.1bdzaiv0cu2fep18kfzvn0pc9gm1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='KCLT' name='textscan.1op2kge1e07byd0zrlx3u0734olw'>
+            <connection class='textscan' directory='C:/Users/grace/Downloads' filename='KCLT.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1op2kge1e07byd0zrlx3u0734olw' name='KCLT.csv' table='[KCLT#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='integer' name='actual_mean_temp' ordinal='1' />
+            <column datatype='integer' name='actual_min_temp' ordinal='2' />
+            <column datatype='integer' name='actual_max_temp' ordinal='3' />
+            <column datatype='integer' name='average_min_temp' ordinal='4' />
+            <column datatype='integer' name='average_max_temp' ordinal='5' />
+            <column datatype='integer' name='record_min_temp' ordinal='6' />
+            <column datatype='integer' name='record_max_temp' ordinal='7' />
+            <column datatype='integer' name='record_min_temp_year' ordinal='8' />
+            <column datatype='integer' name='record_max_temp_year' ordinal='9' />
+            <column datatype='real' name='actual_precipitation' ordinal='10' />
+            <column datatype='real' name='average_precipitation' ordinal='11' />
+            <column datatype='real' name='record_precipitation' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1op2kge1e07byd0zrlx3u0734olw' name='KCLT.csv' table='[KCLT#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='date' name='date' ordinal='0' />
+            <column datatype='integer' name='actual_mean_temp' ordinal='1' />
+            <column datatype='integer' name='actual_min_temp' ordinal='2' />
+            <column datatype='integer' name='actual_max_temp' ordinal='3' />
+            <column datatype='integer' name='average_min_temp' ordinal='4' />
+            <column datatype='integer' name='average_max_temp' ordinal='5' />
+            <column datatype='integer' name='record_min_temp' ordinal='6' />
+            <column datatype='integer' name='record_max_temp' ordinal='7' />
+            <column datatype='integer' name='record_min_temp_year' ordinal='8' />
+            <column datatype='integer' name='record_max_temp_year' ordinal='9' />
+            <column datatype='real' name='actual_precipitation' ordinal='10' />
+            <column datatype='real' name='average_precipitation' ordinal='11' />
+            <column datatype='real' name='record_precipitation' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[KCLT.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[KCLT.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KCLT.csv_F967FFB969BA49EE9793FC622EC79BAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_mean_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_mean_temp]</local-name>
+            <parent-name>[KCLT.csv]</parent-name>
+            <remote-alias>actual_mean_temp</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KCLT.csv_F967FFB969BA49EE9793FC622EC79BAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_min_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_min_temp]</local-name>
+            <parent-name>[KCLT.csv]</parent-name>
+            <remote-alias>actual_min_temp</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KCLT.csv_F967FFB969BA49EE9793FC622EC79BAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_max_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_max_temp]</local-name>
+            <parent-name>[KCLT.csv]</parent-name>
+            <remote-alias>actual_max_temp</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KCLT.csv_F967FFB969BA49EE9793FC622EC79BAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_min_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[average_min_temp]</local-name>
+            <parent-name>[KCLT.csv]</parent-name>
+            <remote-alias>average_min_temp</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KCLT.csv_F967FFB969BA49EE9793FC622EC79BAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_max_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[average_max_temp]</local-name>
+            <parent-name>[KCLT.csv]</parent-name>
+            <remote-alias>average_max_temp</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KCLT.csv_F967FFB969BA49EE9793FC622EC79BAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_min_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_min_temp]</local-name>
+            <parent-name>[KCLT.csv]</parent-name>
+            <remote-alias>record_min_temp</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KCLT.csv_F967FFB969BA49EE9793FC622EC79BAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_max_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_max_temp]</local-name>
+            <parent-name>[KCLT.csv]</parent-name>
+            <remote-alias>record_max_temp</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KCLT.csv_F967FFB969BA49EE9793FC622EC79BAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_min_temp_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_min_temp_year]</local-name>
+            <parent-name>[KCLT.csv]</parent-name>
+            <remote-alias>record_min_temp_year</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KCLT.csv_F967FFB969BA49EE9793FC622EC79BAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_max_temp_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_max_temp_year]</local-name>
+            <parent-name>[KCLT.csv]</parent-name>
+            <remote-alias>record_max_temp_year</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KCLT.csv_F967FFB969BA49EE9793FC622EC79BAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_precipitation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[actual_precipitation]</local-name>
+            <parent-name>[KCLT.csv]</parent-name>
+            <remote-alias>actual_precipitation</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KCLT.csv_F967FFB969BA49EE9793FC622EC79BAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_precipitation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_precipitation]</local-name>
+            <parent-name>[KCLT.csv]</parent-name>
+            <remote-alias>average_precipitation</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KCLT.csv_F967FFB969BA49EE9793FC622EC79BAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_precipitation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[record_precipitation]</local-name>
+            <parent-name>[KCLT.csv]</parent-name>
+            <remote-alias>record_precipitation</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[KCLT.csv_F967FFB969BA49EE9793FC622EC79BAA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='KCLT.csv' datatype='table' name='[__tableau_internal_object_id__].[KCLT.csv_F967FFB969BA49EE9793FC622EC79BAA]' role='measure' type='quantitative' />
+      <column caption='Actual Max Temp' datatype='integer' name='[actual_max_temp]' role='measure' type='quantitative' />
+      <column caption='Actual Mean Temp' datatype='integer' name='[actual_mean_temp]' role='measure' type='quantitative' />
+      <column caption='Actual Min Temp' datatype='integer' name='[actual_min_temp]' role='measure' type='quantitative' />
+      <column caption='Actual Precipitation' datatype='real' name='[actual_precipitation]' role='measure' type='quantitative' />
+      <column caption='Average Max Temp' datatype='integer' name='[average_max_temp]' role='measure' type='quantitative' />
+      <column caption='Average Min Temp' datatype='integer' name='[average_min_temp]' role='measure' type='quantitative' />
+      <column caption='Average Precipitation' datatype='real' name='[average_precipitation]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Record Max Temp' datatype='integer' name='[record_max_temp]' role='measure' type='quantitative' />
+      <column caption='Record Max Temp Year' datatype='integer' name='[record_max_temp_year]' role='dimension' type='quantitative' />
+      <column caption='Record Min Temp' datatype='integer' name='[record_min_temp]' role='measure' type='quantitative' />
+      <column caption='Record Min Temp Year' datatype='integer' name='[record_min_temp_year]' role='dimension' type='quantitative' />
+      <column caption='Record Precipitation' datatype='real' name='[record_precipitation]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='KCLT.csv' id='KCLT.csv_F967FFB969BA49EE9793FC622EC79BAA'>
+            <properties context=''>
+              <relation connection='textscan.1op2kge1e07byd0zrlx3u0734olw' name='KCLT.csv' table='[KCLT#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='date' ordinal='0' />
+                  <column datatype='integer' name='actual_mean_temp' ordinal='1' />
+                  <column datatype='integer' name='actual_min_temp' ordinal='2' />
+                  <column datatype='integer' name='actual_max_temp' ordinal='3' />
+                  <column datatype='integer' name='average_min_temp' ordinal='4' />
+                  <column datatype='integer' name='average_max_temp' ordinal='5' />
+                  <column datatype='integer' name='record_min_temp' ordinal='6' />
+                  <column datatype='integer' name='record_max_temp' ordinal='7' />
+                  <column datatype='integer' name='record_min_temp_year' ordinal='8' />
+                  <column datatype='integer' name='record_max_temp_year' ordinal='9' />
+                  <column datatype='real' name='actual_precipitation' ordinal='10' />
+                  <column datatype='real' name='average_precipitation' ordinal='11' />
+                  <column datatype='real' name='record_precipitation' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (precip)' inline='true' name='federated.1boauoz1mcj37c1ff3gex13tx5ce' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='precip' name='excel-direct.0kcf0711ijovqq1fr3jrt13e99g2'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/grace/Documents/BYU/IS201/precip.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0kcf0711ijovqq1fr3jrt13e99g2' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:N219:no:A1:N219:0' header='yes' outcome='6'>
+            <column datatype='integer' name='date' ordinal='0' />
+            <column datatype='date' name='actual_mean_temp' ordinal='1' />
+            <column datatype='integer' name='actual_min_temp' ordinal='2' />
+            <column datatype='integer' name='actual_max_temp' ordinal='3' />
+            <column datatype='integer' name='average_min_temp' ordinal='4' />
+            <column datatype='integer' name='average_max_temp' ordinal='5' />
+            <column datatype='integer' name='record_min_temp' ordinal='6' />
+            <column datatype='integer' name='record_max_temp' ordinal='7' />
+            <column datatype='integer' name='record_min_temp_year' ordinal='8' />
+            <column datatype='integer' name='record_max_temp_year' ordinal='9' />
+            <column datatype='integer' name='actual_precipitation' ordinal='10' />
+            <column datatype='real' name='average_precipitation' ordinal='11' />
+            <column datatype='real' name='record_precipitation' ordinal='12' />
+            <column datatype='real' name='F14' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0kcf0711ijovqq1fr3jrt13e99g2' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:N219:no:A1:N219:0' header='yes' outcome='6'>
+            <column datatype='integer' name='date' ordinal='0' />
+            <column datatype='date' name='actual_mean_temp' ordinal='1' />
+            <column datatype='integer' name='actual_min_temp' ordinal='2' />
+            <column datatype='integer' name='actual_max_temp' ordinal='3' />
+            <column datatype='integer' name='average_min_temp' ordinal='4' />
+            <column datatype='integer' name='average_max_temp' ordinal='5' />
+            <column datatype='integer' name='record_min_temp' ordinal='6' />
+            <column datatype='integer' name='record_max_temp' ordinal='7' />
+            <column datatype='integer' name='record_min_temp_year' ordinal='8' />
+            <column datatype='integer' name='record_max_temp_year' ordinal='9' />
+            <column datatype='integer' name='actual_precipitation' ordinal='10' />
+            <column datatype='real' name='average_precipitation' ordinal='11' />
+            <column datatype='real' name='record_precipitation' ordinal='12' />
+            <column datatype='real' name='F14' ordinal='13' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:N219:no:A1:N219:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_9254E173569C40E09DDA69A96EC75B35]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_mean_temp</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[actual_mean_temp]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>actual_mean_temp</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_9254E173569C40E09DDA69A96EC75B35]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_min_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_min_temp]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>actual_min_temp</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_9254E173569C40E09DDA69A96EC75B35]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_max_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_max_temp]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>actual_max_temp</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_9254E173569C40E09DDA69A96EC75B35]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_min_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[average_min_temp]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>average_min_temp</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_9254E173569C40E09DDA69A96EC75B35]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_max_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[average_max_temp]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>average_max_temp</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_9254E173569C40E09DDA69A96EC75B35]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_min_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_min_temp]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>record_min_temp</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_9254E173569C40E09DDA69A96EC75B35]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_max_temp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_max_temp]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>record_max_temp</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_9254E173569C40E09DDA69A96EC75B35]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_min_temp_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_min_temp_year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>record_min_temp_year</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_9254E173569C40E09DDA69A96EC75B35]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_max_temp_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[record_max_temp_year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>record_max_temp_year</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_9254E173569C40E09DDA69A96EC75B35]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_precipitation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[actual_precipitation]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>actual_precipitation</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_9254E173569C40E09DDA69A96EC75B35]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_precipitation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_precipitation]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>average_precipitation</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_9254E173569C40E09DDA69A96EC75B35]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>record_precipitation</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[record_precipitation]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>record_precipitation</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_9254E173569C40E09DDA69A96EC75B35]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F14</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F14]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>F14</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sheet1_9254E173569C40E09DDA69A96EC75B35]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_9254E173569C40E09DDA69A96EC75B35]' role='measure' type='quantitative' />
+      <column caption='Actual Max Temp' datatype='integer' name='[actual_max_temp]' role='measure' type='quantitative' />
+      <column caption='Actual Mean Temp' datatype='date' name='[actual_mean_temp]' role='dimension' type='ordinal' />
+      <column caption='Actual Min Temp' datatype='integer' name='[actual_min_temp]' role='measure' type='quantitative' />
+      <column caption='Actual Precipitation' datatype='integer' name='[actual_precipitation]' role='measure' type='quantitative' />
+      <column caption='Average Max Temp' datatype='integer' name='[average_max_temp]' role='measure' type='quantitative' />
+      <column caption='Average Min Temp' datatype='integer' name='[average_min_temp]' role='measure' type='quantitative' />
+      <column caption='Average Precipitation' datatype='real' name='[average_precipitation]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='integer' name='[date]' role='measure' type='quantitative' />
+      <column caption='Record Max Temp' datatype='integer' name='[record_max_temp]' role='measure' type='quantitative' />
+      <column caption='Record Max Temp Year' datatype='integer' name='[record_max_temp_year]' role='dimension' type='quantitative' />
+      <column caption='Record Min Temp' datatype='integer' name='[record_min_temp]' role='measure' type='quantitative' />
+      <column caption='Record Min Temp Year' datatype='integer' name='[record_min_temp_year]' role='dimension' type='quantitative' />
+      <column caption='Record Precipitation' datatype='real' name='[record_precipitation]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_9254E173569C40E09DDA69A96EC75B35'>
+            <properties context=''>
+              <relation connection='excel-direct.0kcf0711ijovqq1fr3jrt13e99g2' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:N219:no:A1:N219:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='date' ordinal='0' />
+                  <column datatype='date' name='actual_mean_temp' ordinal='1' />
+                  <column datatype='integer' name='actual_min_temp' ordinal='2' />
+                  <column datatype='integer' name='actual_max_temp' ordinal='3' />
+                  <column datatype='integer' name='average_min_temp' ordinal='4' />
+                  <column datatype='integer' name='average_max_temp' ordinal='5' />
+                  <column datatype='integer' name='record_min_temp' ordinal='6' />
+                  <column datatype='integer' name='record_max_temp' ordinal='7' />
+                  <column datatype='integer' name='record_min_temp_year' ordinal='8' />
+                  <column datatype='integer' name='record_max_temp_year' ordinal='9' />
+                  <column datatype='integer' name='actual_precipitation' ordinal='10' />
+                  <column datatype='real' name='average_precipitation' ordinal='11' />
+                  <column datatype='real' name='record_precipitation' ordinal='12' />
+                  <column datatype='real' name='F14' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (precip)' name='federated.1boauoz1mcj37c1ff3gex13tx5ce' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1boauoz1mcj37c1ff3gex13tx5ce'>
+            <column caption='Actual Max Temp' datatype='integer' name='[actual_max_temp]' role='measure' type='quantitative' />
+            <column caption='Actual Min Temp' datatype='integer' name='[actual_min_temp]' role='measure' type='quantitative' />
+            <column-instance column='[actual_max_temp]' derivation='Avg' name='[avg:actual_max_temp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[actual_min_temp]' derivation='Avg' name='[avg:actual_min_temp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[record_max_temp]' derivation='Avg' name='[avg:record_max_temp:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[record_min_temp]' derivation='Avg' name='[avg:record_min_temp:qk]' pivot='key' type='quantitative' />
+            <column caption='Record Max Temp' datatype='integer' name='[record_max_temp]' role='measure' type='quantitative' />
+            <column caption='Record Min Temp' datatype='integer' name='[record_min_temp]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1boauoz1mcj37c1ff3gex13tx5ce].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1boauoz1mcj37c1ff3gex13tx5ce].[avg:actual_max_temp:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1boauoz1mcj37c1ff3gex13tx5ce].[avg:record_max_temp:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1boauoz1mcj37c1ff3gex13tx5ce].[avg:actual_min_temp:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1boauoz1mcj37c1ff3gex13tx5ce].[avg:record_min_temp:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1boauoz1mcj37c1ff3gex13tx5ce].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1boauoz1mcj37c1ff3gex13tx5ce].[avg:actual_max_temp:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1boauoz1mcj37c1ff3gex13tx5ce].[avg:record_max_temp:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1boauoz1mcj37c1ff3gex13tx5ce].[avg:actual_min_temp:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1boauoz1mcj37c1ff3gex13tx5ce].[avg:record_min_temp:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1boauoz1mcj37c1ff3gex13tx5ce].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#0c7e62' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1boauoz1mcj37c1ff3gex13tx5ce].[:Measure Names]</rows>
+        <cols>[federated.1boauoz1mcj37c1ff3gex13tx5ce].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{EC922857-4AAB-42BE-AEC7-FBD4DFC59B52}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bdzaiv0cu2fep18kfzvn0pc9gm1].[tyr:date:ok]</field>
+            <field>[federated.1boauoz1mcj37c1ff3gex13tx5ce].[avg:average_max_temp:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{28C05C22-46BA-486C-BDB3-5D0D09628699}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='147' name='Sheet 1' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
